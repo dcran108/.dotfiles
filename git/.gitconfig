@@ -1,0 +1,13 @@
+[user]
+	email = dengchaoran1008@163.com
+	name = Chaoran Deng
+[init]
+	defaultBranch = master
+[color]
+	ui = true
+[pull]
+	rebase = false
+[http]
+	proxy = http://127.0.0.1:7897
+[https]
+	proxy = http://127.0.0.1:7897
