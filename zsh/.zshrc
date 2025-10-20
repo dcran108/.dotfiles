@@ -1,4 +1,4 @@
-# ~/.bashrc
+# ~/.zshrc
 
 [[ $- != *i* ]] && return
 
@@ -22,10 +22,6 @@ alias vmi='vim'
 EDITOR=vim
 export EDITOR
 
-if [[ "$(uname)" != "Darwin" && "$XDG_SESSION_TYPE" != 'wayland' ]]; then
-  setxkbmap -option caps:ctrl_modifier
-fi
-
-bind 'set completion-ignore-case on'
-bind "set show-all-if-ambiguous on"
-bind '"\C-w":backward-kill-word'
+PS1='[dcr@ %~] '
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

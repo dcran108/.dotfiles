@@ -39,7 +39,7 @@ set ttimeoutlen=50
 set mouse=a
 set autoindent
 " set hidden
-set clipboard=unnamedplus
+set clipboard=unnamed
 set ignorecase
 set smartcase
 set incsearch
