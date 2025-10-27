@@ -21,7 +21,7 @@ call plug#begin()
 " Plug 'romainl/vim-cool'
 " Plug 'vim-utils/vim-man'
 " Plug 'skywind3000/asyncrun.vim'
-" Plug 'vhda/verilog_systemverilog.vim'
+Plug 'vhda/verilog_systemverilog.vim'
 
 Plug 'tpope/vim-dispatch'
 Plug 'preservim/tagbar'
@@ -29,6 +29,7 @@ Plug 'mattkretz/vim-gnuindent'
 Plug 'junegunn/vim-easy-align'
 Plug 'embear/vim-localvimrc'
 Plug 'tpope/vim-capslock'
+Plug 'dcran108/vim-bsc'
 
 call plug#end()
 
@@ -47,7 +48,7 @@ set wrapscan
 set hlsearch
 set wildmode=list:longest
 set wildignorecase
-set laststatus=2
+set laststatus=1
 set nostartofline
 set undodir=~/.vim/undo/
 set undofile
@@ -59,6 +60,7 @@ set autochdir
 set autowriteall
 " set statusline=[%n]\ %<%.99f\ %y%h%w%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline=[%n]\ %<%.99f\ %y%h%w%r%=%-14.(%l,%c%V%)\ %P
+set ruler
 
 if $TERM=="alacritty"
   " colorscheme quiet

@@ -1,3 +1,3 @@
 vim9script
 
-b:verilog_indent_modules = 1
+au BufReadPost *   if b:current_syntax == "verilog"| let b:verilog_indent_modules = 1| endif
